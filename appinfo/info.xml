@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<info>
+    <id>paperwork</id>
+    <name>Paperwork</name>
+    <description>Paperwork for ownCloud.</description>
+    <licence>AGPL</licence>
+    <author>Paul Tirk</author>
+    <version>0.1</version>
+    <documentation>
+    	<user></user>
+    	<admin></admin>
+    	<developer></developer>
+    </documentation>
+    <category>tool</category>
+    <website>https://github.com/powerpaul17/ownpaperwork</website>
+    <bugs>https://github.com/powerpaul17/ownpaperwork/issues</bugs>
+    <repository type="git">https://github.com/powerpaul17/ownpaperwork.git</repository>
+    <dependencies>
+        <owncloud min-version="9.0" max-version="9.2" />
+    </dependencies>
+    <ocsid></ocsid>
+</info>
