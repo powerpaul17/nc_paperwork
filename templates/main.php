@@ -7,12 +7,15 @@ script('paperwork', 'vendor/angular-cache/dist/angular-cache');
 script('paperwork', 'vendor/angular-sanitize/angular-sanitize');
 script('paperwork', 'vendor/ui-select/dist/select');
 
-// DAV libraries
-script('paperwork', 'dav/dav');
-//script('paperwork', 'vendor/vcard/src/vcard');
-
 // compiled version of app javascript
-script('paperwork', 'public/script');
+// script('paperwork', 'public/script');
+
+script('paperwork', 'main');
+script('paperwork', 'components/labelList');
+script('paperwork', 'components/documentDetails');
+script('paperwork', 'components/documentList');
+script('paperwork', 'components/documentListItem');
+script('paperwork', 'services/document');
 
 script('paperwork', 'vendor/angular-bootstrap/ui-bootstrap.min');
 script('paperwork', 'vendor/angular-bootstrap/ui-bootstrap-tpls.min');
@@ -46,7 +49,7 @@ vendor_style('select2/select2');
 
 	<div id="app-content">
 		<div class="app-content-list">
-			<documentList></documentList>
+			<document-list></document-list>
 		</div>
 		<div class="app-content-detail" ng-view></div>
 	</div>

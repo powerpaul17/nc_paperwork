@@ -1,0 +1,15 @@
+<div class="accounts-list" ng-class="{loading: ctrl.loading, 'mobile-show': ctrl.show}">
+  <div class="app-content-list-item"
+       ng-repeat="document in ctrl.documentList = (ctrl.documents | orderBy: 'name') as filtered track by document.id"
+       document-list-item data="document"
+       ng-click="setSelected(document.id)"
+       ng-class="{active: document.id === ctrl.getSelectedId()}"
+  >
+  </div>
+  <div ng-show="!ctrl.loading && !ctrl.documentList.length">
+    <div id="emptycontent" class="">
+			<div class="icon-paperwork-dark"></div>
+			<h2>{{ctrl.t.noDocuments}}</h2>
+		</div>
+  </div>
+</div>

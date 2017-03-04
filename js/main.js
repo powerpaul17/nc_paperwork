@@ -11,12 +11,12 @@
 angular.module('paperworkApp', ['uuid4', 'angular-cache', 'ngRoute', 'ui.bootstrap', 'ui.select', 'ngSanitize', 'ngclipboard'])
 .config(function($routeProvider) {
 
-	$routeProvider.when('/:gid', {
-		template: '<contactdetails></contactdetails>'
+	$routeProvider.when('/:label', {
+		template: '<document-details></document-details>'
 	});
 
-	$routeProvider.when('/:gid/:uid', {
-		template: '<contactdetails></contactdetails>'
+	$routeProvider.when('/:label/:documentId', {
+		template: '<document-details></document-details>'
 	});
 
 	$routeProvider.otherwise('/' + t('paperwork', 'All papers'));
